@@ -1,0 +1,27 @@
+name: SimplScreens
+options:
+  bundleIdPrefix: com.sudobuiltapps
+  deploymentTarget:
+    tvOS: "17.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+
+targets:
+  SimplScreens:
+    type: application
+    platform: tvOS
+    sources:
+      - Shared
+      - tvOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.sudobuiltapps.simplscreens
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: true
+        INFOPLIST_KEY_CFBundleDisplayName: SimplScreens
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: NR7893L93M

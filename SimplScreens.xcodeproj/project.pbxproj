@@ -64,6 +64,7 @@
 		DEB3C88601EAEF3D409F8084 /* SimplScreensApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplScreensApp.swift; sourceTree = "<group>"; };
 		DF0D8B7DB36C9854C8900081 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E311D8B1C5EFBC6C358C790F /* golden-hour-beach.mp4 */ = {isa = PBXFileReference; path = "golden-hour-beach.mp4"; sourceTree = "<group>"; };
+		E3677EB225E5DE9DBA23653E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E822D67A548CE3DC8DA60566 /* tropical-flowers.mp4 */ = {isa = PBXFileReference; path = "tropical-flowers.mp4"; sourceTree = "<group>"; };
 		F12E79CD0B55C30E212096A2 /* ScreensaverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreensaverView.swift; sourceTree = "<group>"; };
 		F333398322742A14C47244CC /* sunrise-from-shore.mp4 */ = {isa = PBXFileReference; path = "sunrise-from-shore.mp4"; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 		157B3DEC1F257FB727B92105 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
+				E3677EB225E5DE9DBA23653E /* Info.plist */,
 				359B5645DA1DF4BC415C183C /* App */,
 				055AE3BF1E168C65BB3B11BF /* Resources */,
 				2DD750F10FAEB2A27BC6323F /* Views */,
@@ -244,7 +246,7 @@
 				TargetAttributes = {
 					7A6160AC1C0EEC7F3476E8EC = {
 						DevelopmentTeam = 9G5Y8G34K5;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -378,17 +380,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 9G5Y8G34K5;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = SimplScreens;
+				INFOPLIST_FILE = tvOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sudobuiltapps.simplscreens;
+				PROVISIONING_PROFILE_SPECIFIER = "SimplScreens tvOS App Store";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
@@ -399,17 +402,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 9G5Y8G34K5;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = SimplScreens;
+				INFOPLIST_FILE = tvOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sudobuiltapps.simplscreens;
+				PROVISIONING_PROFILE_SPECIFIER = "SimplScreens tvOS App Store";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 			};

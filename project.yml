@@ -24,4 +24,4 @@ targets:
         GENERATE_INFOPLIST_FILE: true
         INFOPLIST_KEY_CFBundleDisplayName: SimplScreens
         CODE_SIGN_STYLE: Automatic
-        DEVELOPMENT_TEAM: NR7893L93M
+        DEVELOPMENT_TEAM: 9G5Y8G34K5

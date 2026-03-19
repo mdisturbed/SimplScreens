@@ -36,6 +36,7 @@
 		F16FEE8B443B057A4579B4C5 /* SceneEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE208895F3A53CA56D26A24F /* SceneEngine.swift */; };
 		F550BAD7394C81E639060416 /* golden-hour-beach.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E311D8B1C5EFBC6C358C790F /* golden-hour-beach.mp4 */; };
 		F6DD5CCA8FA7386478D38267 /* turquoise-water.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D53FC585F4B155EC3ACAB2A /* turquoise-water.mp4 */; };
+		FD30B61CF642D4235E808C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B57F18F51E1262B8720B869 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		217634315D10ACF66078CFCA /* ocean-aerial.mp4 */ = {isa = PBXFileReference; path = "ocean-aerial.mp4"; sourceTree = "<group>"; };
 		2567CBBACAEDA4515E9E2129 /* palm-beach-waves.mp4 */ = {isa = PBXFileReference; path = "palm-beach-waves.mp4"; sourceTree = "<group>"; };
 		2A23E61CA2A79AFC2EAB4A30 /* lighthouse-sunrise.mp4 */ = {isa = PBXFileReference; path = "lighthouse-sunrise.mp4"; sourceTree = "<group>"; };
+		3B57F18F51E1262B8720B869 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DD6EDB717ADA47C47D74137 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		7AE6ECE2DDAFF86AB67266E2 /* SimplScreens.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SimplScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9184270114E958A4B10E4A81 /* InfoOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoOverlayView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		055AE3BF1E168C65BB3B11BF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3B57F18F51E1262B8720B869 /* Assets.xcassets */,
 				80873AB47DA0C6EA9D4DE710 /* Packs */,
 			);
 			path = Resources;
@@ -274,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD30B61CF642D4235E808C2B /* Assets.xcassets in Resources */,
 				80CCE0358E3AF8F562E37E95 /* coastal-ambient.mp3 in Resources */,
 				F550BAD7394C81E639060416 /* golden-hour-beach.mp4 in Resources */,
 				B599661233C733D6F0FA5E06 /* lighthouse-sunrise.mp4 in Resources */,
@@ -382,7 +386,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 9G5Y8G34K5;
 				INFOPLIST_FILE = tvOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,7 +408,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 9G5Y8G34K5;
 				INFOPLIST_FILE = tvOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -84,6 +84,7 @@ final class MusicPlayer: ObservableObject {
             // Crossfade using a class to hold mutable state
             let fadeState = FadeState(currentStep: 0, steps: 40)
             let stepDuration = duration / Double(fadeState.steps)
+            let initialVolume = currentPlayer.volume
             
             fadeTimer = Timer.scheduledTimer(withTimeInterval: stepDuration, repeats: true) { [weak self] timer in
                 guard let self = self else {
@@ -95,7 +96,7 @@ final class MusicPlayer: ObservableObject {
                 
                 let progress = Float(fadeState.currentStep) / Float(fadeState.steps)
                 newPlayer.volume = volume * progress
-                currentPlayer.volume = currentPlayer.volume * (1.0 - (progress / Float(fadeState.steps)))
+                currentPlayer.volume = initialVolume * (1.0 - progress)
                 
                 if fadeState.currentStep >= fadeState.steps {
                     timer.invalidate()

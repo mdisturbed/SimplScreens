@@ -56,7 +56,7 @@ struct ContentView: View {
             price: nil,
             productID: nil,
             isPurchased: true,
-            musicTrackFilename: nil,
+            musicTrackFilename: "coastal-ambient.mp3",
             thumbnailFilename: "coastal-thumb.jpg"
         )
         
@@ -82,7 +82,7 @@ struct ContentView: View {
             price: nil,
             productID: nil,
             isPurchased: true,
-            musicTrackFilename: nil,
+            musicTrackFilename: "tropical-ambient.mp3",
             thumbnailFilename: "tropical-thumb.jpg"
         )
         

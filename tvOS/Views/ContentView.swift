@@ -5,12 +5,30 @@ struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var packs: [ContentPack]
     
+    @State private var isFullscreenScreensaver = false
+    
     var body: some View {
         TabView {
-            ScreensaverView()
-                .tabItem {
-                    Label("Play", systemImage: "play.circle.fill")
+            // Play tab - trigger fullscreen presentation
+            Button(action: {
+                isFullscreenScreensaver = true
+            }) {
+                VStack(spacing: 20) {
+                    Image(systemName: "play.circle.fill")
+                        .font(.system(size: 120))
+                        .foregroundColor(.white)
+                    
+                    Text("Start Screensaver")
+                        .font(.title)
+                        .foregroundColor(.white)
                 }
+            }
+            .buttonStyle(.plain)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.black.ignoresSafeArea())
+            .tabItem {
+                Label("Play", systemImage: "play.circle.fill")
+            }
             
             PackBrowserView()
                 .tabItem {
@@ -23,6 +41,9 @@ struct ContentView: View {
                 }
         }
         .preferredColorScheme(.dark)
+        .fullScreenCover(isPresented: $isFullscreenScreensaver) {
+            ScreensaverView(isFullscreen: $isFullscreenScreensaver)
+        }
         .onAppear {
             initializePlaceholderData()
         }

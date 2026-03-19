@@ -8,6 +8,6 @@ struct SimplScreensApp: App {
             ContentView()
                 .preferredColorScheme(.dark) // MANDATORY — Jay has vision issues
         }
-        .modelContainer(for: [ContentPack.self, Scene.self, UserPreferences.self])
+        .modelContainer(for: [ContentPack.self, SceneItem.self, UserPreferences.self])
     }
 }

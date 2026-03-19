@@ -30,7 +30,7 @@ enum TransitionStyle: String, Codable {
 }
 
 @Model
-final class Scene {
+final class SceneItem {
     @Attribute(.unique) var id: UUID
     var filename: String        // Relative to pack directory
     var type: SceneType

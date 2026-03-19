@@ -2,7 +2,7 @@ import SwiftUI
 import AVKit
 
 struct ScenePlayerView: View {
-    let scene: Scene
+    let scene: SceneItem
     
     @State private var player: AVPlayer?
     

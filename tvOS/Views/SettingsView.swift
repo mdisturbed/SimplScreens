@@ -34,10 +34,13 @@ struct SettingsView: View {
                     Toggle("Enable Music", isOn: $musicEnabled)
                     
                     if musicEnabled {
-                        HStack {
-                            Text("Volume")
-                            Slider(value: $musicVolume, in: 0...1)
-                                .frame(maxWidth: 300)
+                        Picker("Volume", selection: Binding(
+                            get: { Int(musicVolume * 10) },
+                            set: { musicVolume = Float($0) / 10.0 }
+                        )) {
+                            ForEach(0...10, id: \.self) { level in
+                                Text("\(level * 10)%").tag(level)
+                            }
                         }
                     }
                 }

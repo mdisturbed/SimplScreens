@@ -3,8 +3,8 @@ import SwiftData
 
 @MainActor
 final class SceneEngine: ObservableObject {
-    @Published private(set) var currentScene: Scene?
-    @Published private(set) var nextScene: Scene?
+    @Published private(set) var currentScene: SceneItem?
+    @Published private(set) var nextScene: SceneItem?
     
     private let preferences: UserPreferences
     private var availablePacks: [ContentPack]
@@ -15,7 +15,7 @@ final class SceneEngine: ObservableObject {
         self.availablePacks = availablePacks
     }
     
-    func selectNextScene(currentWeather: WeatherCondition = .any) async -> Scene? {
+    func selectNextScene(currentWeather: WeatherCondition = .any) async -> SceneItem? {
         let currentTime = timeOfDay()
         
         let eligibleScenes = availableScenes()
@@ -29,7 +29,7 @@ final class SceneEngine: ObservableObject {
             return availableScenes().randomElement()
         }
         
-        let selected: Scene?
+        let selected: SceneItem?
         switch preferences.shuffleMode {
         case .sequential:
             selected = eligibleScenes.first
@@ -47,7 +47,7 @@ final class SceneEngine: ObservableObject {
         return selected
     }
     
-    private func availableScenes() -> [Scene] {
+    private func availableScenes() -> [SceneItem] {
         availablePacks
             .filter { pack in 
                 pack.isAvailable && preferences.selectedPackIDs.contains(pack.id) 
@@ -65,9 +65,9 @@ final class SceneEngine: ObservableObject {
         }
     }
     
-    private func weightedRandom(from scenes: [Scene], time: TimeOfDay, 
-                               weather: WeatherCondition) -> Scene? {
-        let weighted = scenes.map { scene -> (Scene, Int) in
+    private func weightedRandom(from scenes: [SceneItem], time: TimeOfDay, 
+                               weather: WeatherCondition) -> SceneItem? {
+        let weighted = scenes.map { scene -> (SceneItem, Int) in
             var weight = 1
             if scene.timeOfDay == time && scene.weatherCondition == weather {
                 weight = 3

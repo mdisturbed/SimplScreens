@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct InfoOverlayView: View {
-    let scene: Scene
+    let scene: SceneItem
     
     var body: some View {
         VStack {

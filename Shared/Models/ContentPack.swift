@@ -13,7 +13,7 @@ final class ContentPack {
     var version: Int            // Content version for updates
     
     @Relationship(deleteRule: .cascade)
-    var scenes: [Scene]
+    var scenes: [SceneItem]
     
     var musicTrackFilename: String? // "nature-escapes-ambient.aac"
     var thumbnailFilename: String   // For pack store UI
@@ -23,7 +23,7 @@ final class ContentPack {
     }
     
     init(id: UUID = UUID(), name: String, theme: String, price: Decimal?, 
-         productID: String?, isPurchased: Bool = false, scenes: [Scene] = [], 
+         productID: String?, isPurchased: Bool = false, scenes: [SceneItem] = [], 
          musicTrackFilename: String?, thumbnailFilename: String, version: Int = 1) {
         self.id = id
         self.name = name

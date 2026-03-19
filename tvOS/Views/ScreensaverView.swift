@@ -6,7 +6,7 @@ struct ScreensaverView: View {
     @Query private var preferences: [UserPreferences]
     @Query private var packs: [ContentPack]
     
-    @State private var currentScene: Scene?
+    @State private var currentScene: SceneItem?
     @State private var showInfoOverlay = false
     @State private var sceneChangeTask: Task<Void, Never>?
     

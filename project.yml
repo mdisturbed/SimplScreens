@@ -16,6 +16,8 @@ targets:
     sources:
       - Shared
       - tvOS
+    resources:
+      - tvOS/Resources/**
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.sudobuiltapps.simplscreens

@@ -8,44 +8,79 @@
 
 /* Begin PBXBuildFile section */
 		04DFB4BACCFC9B2F419E58BA /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6993F4DF952BDE42577E03E /* Logger.swift */; };
+		0612E2F0E51EAFBD57F96928 /* underwater-reef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 063521DB1B5EE683DA377BC3 /* underwater-reef.mp4 */; };
+		0B0514981C5DB4342814AA43 /* seacoast-aerial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DB75197F6103B30524BD3C95 /* seacoast-aerial.mp4 */; };
+		28ADECB7E12671962C1B59A6 /* water-crashing-rocks.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0D538D43D67A7C89CC5A70D /* water-crashing-rocks.mp4 */; };
 		3158D73F61E42354C3D9D0DE /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16151917D5547F634E5302CE /* Scene.swift */; };
 		33B28E273B456FF74C1B1752 /* SimplScreensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3C88601EAEF3D409F8084 /* SimplScreensApp.swift */; };
+		455A4A7F1BA85064F3D2DB40 /* slow-motion-waves.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A30AAC3B3C1E59EDA889542E /* slow-motion-waves.mp4 */; };
+		52A9897698C7254D57F82846 /* waves-rushing-seashore.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C0C82C0B01C085A551D2034F /* waves-rushing-seashore.mp4 */; };
+		5BD4416DAD83CA80F2F266D1 /* sunrise-from-shore.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F333398322742A14C47244CC /* sunrise-from-shore.mp4 */; };
 		62CA2C4546FF8E1E4F0EF23B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6EDB717ADA47C47D74137 /* SettingsView.swift */; };
+		785D5F3176C1A6427FDCC487 /* tropical-waterfall.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C9C0EF39C4E52D808EBB3358 /* tropical-waterfall.mp4 */; };
 		7F5A2C02B5D82B1081B36192 /* PackBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221E1E1DEE632F20938B177 /* PackBrowserView.swift */; };
 		8285AD9D85DDAB723637079B /* ScreensaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12E79CD0B55C30E212096A2 /* ScreensaverView.swift */; };
+		932B4DFBC695EEB57444C3B5 /* palm-beach-waves.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2567CBBACAEDA4515E9E2129 /* palm-beach-waves.mp4 */; };
 		99E7E55658D8E1EC45D08597 /* ScenePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D53DD593CF654B0582DDF1 /* ScenePlayerView.swift */; };
 		A0150868722E02216FAAB35C /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E16077E8EE4079AC42456 /* MusicPlayer.swift */; };
 		A436DF3F9EF8B27B4FFD25DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D8B7DB36C9854C8900081 /* ContentView.swift */; };
 		A5C996F0D3326D493BE2C5EB /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F5A18A93371A33272D3AA /* UserPreferences.swift */; };
 		A73588F56AFB5D4838FAEFF0 /* ContentPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4A7C79F26251B4AB492C13 /* ContentPack.swift */; };
+		B599661233C733D6F0FA5E06 /* lighthouse-sunrise.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E61CA2A79AFC2EAB4A30 /* lighthouse-sunrise.mp4 */; };
+		BE6BFDE867DAFF9699527279 /* ocean-aerial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 217634315D10ACF66078CFCA /* ocean-aerial.mp4 */; };
 		C16B02DB7BB1789D5B42BE0F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE31FC9D78C3150F3429B35 /* Constants.swift */; };
+		C7FB12B84416325754C671A3 /* tropical-flowers.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E822D67A548CE3DC8DA60566 /* tropical-flowers.mp4 */; };
 		D3E86E7014C40CF24E1CE170 /* InfoOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184270114E958A4B10E4A81 /* InfoOverlayView.swift */; };
 		F16FEE8B443B057A4579B4C5 /* SceneEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE208895F3A53CA56D26A24F /* SceneEngine.swift */; };
+		F550BAD7394C81E639060416 /* golden-hour-beach.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E311D8B1C5EFBC6C358C790F /* golden-hour-beach.mp4 */; };
+		F6DD5CCA8FA7386478D38267 /* turquoise-water.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D53FC585F4B155EC3ACAB2A /* turquoise-water.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0221E1E1DEE632F20938B177 /* PackBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackBrowserView.swift; sourceTree = "<group>"; };
+		063521DB1B5EE683DA377BC3 /* underwater-reef.mp4 */ = {isa = PBXFileReference; path = "underwater-reef.mp4"; sourceTree = "<group>"; };
 		16151917D5547F634E5302CE /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		217634315D10ACF66078CFCA /* ocean-aerial.mp4 */ = {isa = PBXFileReference; path = "ocean-aerial.mp4"; sourceTree = "<group>"; };
+		2567CBBACAEDA4515E9E2129 /* palm-beach-waves.mp4 */ = {isa = PBXFileReference; path = "palm-beach-waves.mp4"; sourceTree = "<group>"; };
+		2A23E61CA2A79AFC2EAB4A30 /* lighthouse-sunrise.mp4 */ = {isa = PBXFileReference; path = "lighthouse-sunrise.mp4"; sourceTree = "<group>"; };
 		3DD6EDB717ADA47C47D74137 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		7AE6ECE2DDAFF86AB67266E2 /* SimplScreens.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SimplScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9184270114E958A4B10E4A81 /* InfoOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoOverlayView.swift; sourceTree = "<group>"; };
+		9D53FC585F4B155EC3ACAB2A /* turquoise-water.mp4 */ = {isa = PBXFileReference; path = "turquoise-water.mp4"; sourceTree = "<group>"; };
+		A30AAC3B3C1E59EDA889542E /* slow-motion-waves.mp4 */ = {isa = PBXFileReference; path = "slow-motion-waves.mp4"; sourceTree = "<group>"; };
 		A7D53DD593CF654B0582DDF1 /* ScenePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePlayerView.swift; sourceTree = "<group>"; };
 		AC4A7C79F26251B4AB492C13 /* ContentPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPack.swift; sourceTree = "<group>"; };
+		B0D538D43D67A7C89CC5A70D /* water-crashing-rocks.mp4 */ = {isa = PBXFileReference; path = "water-crashing-rocks.mp4"; sourceTree = "<group>"; };
+		C0C82C0B01C085A551D2034F /* waves-rushing-seashore.mp4 */ = {isa = PBXFileReference; path = "waves-rushing-seashore.mp4"; sourceTree = "<group>"; };
+		C9C0EF39C4E52D808EBB3358 /* tropical-waterfall.mp4 */ = {isa = PBXFileReference; path = "tropical-waterfall.mp4"; sourceTree = "<group>"; };
 		CFE31FC9D78C3150F3429B35 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D26F5A18A93371A33272D3AA /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		DB75197F6103B30524BD3C95 /* seacoast-aerial.mp4 */ = {isa = PBXFileReference; path = "seacoast-aerial.mp4"; sourceTree = "<group>"; };
 		DD2E16077E8EE4079AC42456 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		DE208895F3A53CA56D26A24F /* SceneEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneEngine.swift; sourceTree = "<group>"; };
 		DEB3C88601EAEF3D409F8084 /* SimplScreensApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplScreensApp.swift; sourceTree = "<group>"; };
 		DF0D8B7DB36C9854C8900081 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E311D8B1C5EFBC6C358C790F /* golden-hour-beach.mp4 */ = {isa = PBXFileReference; path = "golden-hour-beach.mp4"; sourceTree = "<group>"; };
+		E822D67A548CE3DC8DA60566 /* tropical-flowers.mp4 */ = {isa = PBXFileReference; path = "tropical-flowers.mp4"; sourceTree = "<group>"; };
 		F12E79CD0B55C30E212096A2 /* ScreensaverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreensaverView.swift; sourceTree = "<group>"; };
+		F333398322742A14C47244CC /* sunrise-from-shore.mp4 */ = {isa = PBXFileReference; path = "sunrise-from-shore.mp4"; sourceTree = "<group>"; };
 		F6993F4DF952BDE42577E03E /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		055AE3BF1E168C65BB3B11BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80873AB47DA0C6EA9D4DE710 /* Packs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		157B3DEC1F257FB727B92105 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
 				359B5645DA1DF4BC415C183C /* App */,
+				055AE3BF1E168C65BB3B11BF /* Resources */,
 				2DD750F10FAEB2A27BC6323F /* Views */,
 			);
 			path = tvOS;
@@ -116,6 +151,28 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		7C2AEB96510A2530318B2DFD /* tropical-calm */ = {
+			isa = PBXGroup;
+			children = (
+				217634315D10ACF66078CFCA /* ocean-aerial.mp4 */,
+				2567CBBACAEDA4515E9E2129 /* palm-beach-waves.mp4 */,
+				E822D67A548CE3DC8DA60566 /* tropical-flowers.mp4 */,
+				C9C0EF39C4E52D808EBB3358 /* tropical-waterfall.mp4 */,
+				9D53FC585F4B155EC3ACAB2A /* turquoise-water.mp4 */,
+				063521DB1B5EE683DA377BC3 /* underwater-reef.mp4 */,
+			);
+			path = "tropical-calm";
+			sourceTree = "<group>";
+		};
+		80873AB47DA0C6EA9D4DE710 /* Packs */ = {
+			isa = PBXGroup;
+			children = (
+				D83365B257BA3B26047BBA41 /* coastal-mornings */,
+				7C2AEB96510A2530318B2DFD /* tropical-calm */,
+			);
+			path = Packs;
+			sourceTree = "<group>";
+		};
 		9DEC299622BFE989466C910C /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +192,20 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		D83365B257BA3B26047BBA41 /* coastal-mornings */ = {
+			isa = PBXGroup;
+			children = (
+				E311D8B1C5EFBC6C358C790F /* golden-hour-beach.mp4 */,
+				2A23E61CA2A79AFC2EAB4A30 /* lighthouse-sunrise.mp4 */,
+				DB75197F6103B30524BD3C95 /* seacoast-aerial.mp4 */,
+				A30AAC3B3C1E59EDA889542E /* slow-motion-waves.mp4 */,
+				F333398322742A14C47244CC /* sunrise-from-shore.mp4 */,
+				B0D538D43D67A7C89CC5A70D /* water-crashing-rocks.mp4 */,
+				C0C82C0B01C085A551D2034F /* waves-rushing-seashore.mp4 */,
+			);
+			path = "coastal-mornings";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +214,7 @@
 			buildConfigurationList = D7749C454E6242195B7B2CB5 /* Build configuration list for PBXNativeTarget "SimplScreens" */;
 			buildPhases = (
 				BF19CC93A14822FB290315A4 /* Sources */,
+				8346CF1F572F1ED632BA5AA8 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -188,6 +260,29 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8346CF1F572F1ED632BA5AA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F550BAD7394C81E639060416 /* golden-hour-beach.mp4 in Resources */,
+				B599661233C733D6F0FA5E06 /* lighthouse-sunrise.mp4 in Resources */,
+				BE6BFDE867DAFF9699527279 /* ocean-aerial.mp4 in Resources */,
+				932B4DFBC695EEB57444C3B5 /* palm-beach-waves.mp4 in Resources */,
+				0B0514981C5DB4342814AA43 /* seacoast-aerial.mp4 in Resources */,
+				455A4A7F1BA85064F3D2DB40 /* slow-motion-waves.mp4 in Resources */,
+				5BD4416DAD83CA80F2F266D1 /* sunrise-from-shore.mp4 in Resources */,
+				C7FB12B84416325754C671A3 /* tropical-flowers.mp4 in Resources */,
+				785D5F3176C1A6427FDCC487 /* tropical-waterfall.mp4 in Resources */,
+				F6DD5CCA8FA7386478D38267 /* turquoise-water.mp4 in Resources */,
+				0612E2F0E51EAFBD57F96928 /* underwater-reef.mp4 in Resources */,
+				28ADECB7E12671962C1B59A6 /* water-crashing-rocks.mp4 in Resources */,
+				52A9897698C7254D57F82846 /* waves-rushing-seashore.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF19CC93A14822FB290315A4 /* Sources */ = {

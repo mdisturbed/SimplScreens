@@ -52,7 +52,7 @@ struct ContentView: View {
     private func createCoastalMorningsPack() -> ContentPack {
         let pack = ContentPack(
             name: "Coastal Mornings",
-            theme: "Pacific Northwest beaches, tide pools, morning fog",
+            theme: "Ocean waves, sunrise, and coastal scenery",
             price: nil,
             productID: nil,
             isPurchased: true,
@@ -61,11 +61,13 @@ struct ContentView: View {
         )
         
         let scenes = [
-            Scene(filename: "coastal-1", type: .photo, timeOfDay: .morning, weatherCondition: .clear, transitionStyle: .kenBurns, duration: 30),
-            Scene(filename: "coastal-2", type: .photo, timeOfDay: .morning, weatherCondition: .cloudy, transitionStyle: .kenBurns, duration: 30),
-            Scene(filename: "coastal-3", type: .photo, timeOfDay: .afternoon, weatherCondition: .any, transitionStyle: .crossfade, duration: 30),
-            Scene(filename: "coastal-4", type: .photo, timeOfDay: .evening, weatherCondition: .clear, transitionStyle: .kenBurns, duration: 30),
-            Scene(filename: "coastal-5", type: .photo, timeOfDay: .any, weatherCondition: .rain, transitionStyle: .crossfade, duration: 30)
+            Scene(filename: "golden-hour-beach.mp4", type: .video, timeOfDay: .morning, weatherCondition: .any, transitionStyle: .crossfade, duration: 23),
+            Scene(filename: "lighthouse-sunrise.mp4", type: .video, timeOfDay: .morning, weatherCondition: .any, transitionStyle: .crossfade, duration: 15),
+            Scene(filename: "seacoast-aerial.mp4", type: .video, timeOfDay: .morning, weatherCondition: .any, transitionStyle: .crossfade, duration: 24),
+            Scene(filename: "slow-motion-waves.mp4", type: .video, timeOfDay: .morning, weatherCondition: .any, transitionStyle: .crossfade, duration: 85),
+            Scene(filename: "sunrise-from-shore.mp4", type: .video, timeOfDay: .morning, weatherCondition: .any, transitionStyle: .crossfade, duration: 23),
+            Scene(filename: "water-crashing-rocks.mp4", type: .video, timeOfDay: .morning, weatherCondition: .any, transitionStyle: .crossfade, duration: 8),
+            Scene(filename: "waves-rushing-seashore.mp4", type: .video, timeOfDay: .morning, weatherCondition: .any, transitionStyle: .crossfade, duration: 25)
         ]
         
         scenes.forEach { pack.scenes.append($0) }
@@ -76,7 +78,7 @@ struct ContentView: View {
     private func createTropicalCalmPack() -> ContentPack {
         let pack = ContentPack(
             name: "Tropical Calm",
-            theme: "Waterfalls, jungle canopies, island sunsets",
+            theme: "Tropical beaches, waterfalls, and underwater scenes",
             price: nil,
             productID: nil,
             isPurchased: true,
@@ -85,11 +87,12 @@ struct ContentView: View {
         )
         
         let scenes = [
-            Scene(filename: "tropical-1", type: .photo, timeOfDay: .morning, weatherCondition: .clear, transitionStyle: .kenBurns, duration: 30),
-            Scene(filename: "tropical-2", type: .photo, timeOfDay: .afternoon, weatherCondition: .clear, transitionStyle: .parallax, duration: 30),
-            Scene(filename: "tropical-3", type: .photo, timeOfDay: .evening, weatherCondition: .clear, transitionStyle: .kenBurns, duration: 30),
-            Scene(filename: "tropical-4", type: .photo, timeOfDay: .any, weatherCondition: .rain, transitionStyle: .crossfade, duration: 30),
-            Scene(filename: "tropical-5", type: .photo, timeOfDay: .night, weatherCondition: .any, transitionStyle: .kenBurns, duration: 30)
+            Scene(filename: "ocean-aerial.mp4", type: .video, timeOfDay: .any, weatherCondition: .any, transitionStyle: .crossfade, duration: 15),
+            Scene(filename: "palm-beach-waves.mp4", type: .video, timeOfDay: .any, weatherCondition: .any, transitionStyle: .crossfade, duration: 23),
+            Scene(filename: "tropical-flowers.mp4", type: .video, timeOfDay: .any, weatherCondition: .any, transitionStyle: .crossfade, duration: 20),
+            Scene(filename: "tropical-waterfall.mp4", type: .video, timeOfDay: .any, weatherCondition: .any, transitionStyle: .crossfade, duration: 8),
+            Scene(filename: "turquoise-water.mp4", type: .video, timeOfDay: .any, weatherCondition: .any, transitionStyle: .crossfade, duration: 21),
+            Scene(filename: "underwater-reef.mp4", type: .video, timeOfDay: .any, weatherCondition: .any, transitionStyle: .crossfade, duration: 85)
         ]
         
         scenes.forEach { pack.scenes.append($0) }

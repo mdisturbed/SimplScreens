@@ -9,6 +9,7 @@ struct ScreensaverView: View {
     @State private var currentScene: SceneItem?
     @State private var showInfoOverlay = false
     @State private var sceneChangeTask: Task<Void, Never>?
+    @StateObject private var musicPlayer = MusicPlayer()
     
     var body: some View {
         ZStack {
@@ -36,14 +37,25 @@ struct ScreensaverView: View {
         .preferredColorScheme(.dark)
         .onAppear {
             startScreensaver()
+            startMusic()
         }
         .onDisappear {
             sceneChangeTask?.cancel()
+            musicPlayer.stop()
         }
         .onTapGesture {
             withAnimation {
                 showInfoOverlay.toggle()
             }
+        }
+    }
+    
+    private func startMusic() {
+        guard let prefs = preferences.first, prefs.musicEnabled else { return }
+        // Play music from the first available pack
+        if let pack = packs.first(where: { $0.isAvailable }),
+           let trackFilename = pack.musicTrackFilename {
+            musicPlayer.play(track: trackFilename, volume: prefs.musicVolume)
         }
     }
     
